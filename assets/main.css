@@ -1,34 +1,97 @@
+/*
+body, html {
+  margin: 0;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: black;
+  border-color: green;
+  border-style: solid;
+  padding: 20px;
+}
+
+.navbar {
+  border-color: red;
+  border-style: solid;
+  display: flex;
+  position: sticky;
+}
+
+.navbar h1 {
+  border-style: solid;
+  border-color: orange;
+  color: white;
+  letter-spacing: 0.15em;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar ul {
+  border-style: solid;
+  border-color: orange;
+  padding: 20px 20px;
+}
+
+.navbar li {
+  border-style: solid;
+  border-color: yellow;
+  display: table-cell;
+
+} */
+
   body,html {
   margin: 0;
   font: bold 14px/1.4 'Open Sans', arial, sans-serif;
   background: #000;
+  border-color: white;
+  border-style: solid;
+  padding: 20px;
 }
-ul {
-  margin: 150px auto 0;
+
+.navbar {
+  border-color: red;
+  border-style: solid;
+  display: flex;
+}
+.navbar h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 20px 20px;
+  border-color: yellow;
+  border-style: solid;
+}
+.navbar ul {
+  margin: 0 auto 0;
   position: relative;
-  padding: 0;
+  padding: 10px;
   list-style: none;
-  display: table;
-  width: 600px;
+  display: flex;
+  width: 900px;
+  border-style: solid;
+  border-color: green;
   text-align: center;
 }
-li {
+.navbar li {
   display: table-cell;
   position: relative;
-  padding: 15px 0;
-
+  margin: 0 auto 0;
+  padding: 20px 20px;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+  border-style: solid;
+  border-color: orange;
 }
-a {
+.navbar a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
   display: inline-block;
   padding: 15px 20px;
   position: relative;
+  font-size:
 }
-a:after {
+.navbar a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -40,16 +103,17 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
+.navbar a:hover:after {
   width: 100%;
   left: 0;
 }
-h1 {
+.blurb h1 {
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  padding: 15px 20px;
-  display: inline-block;
+
+  padding: inherit;
+  border-color: green;
+  border-style: solid;
 }
 
 @media screen and (max-height: 300px) {
@@ -60,5 +124,5 @@ h1 {
 .splinetool {
   position: relative;
   display: flex;
-
+  float: right;
 }
